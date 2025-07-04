@@ -1,0 +1,27 @@
+[
+  {
+    "image": "/assets/img/icons/serv_icons/25.png",
+    "title": "Automatización de Procesos",
+    "text": "Elimina tareas repetitivas y mejora la productividad con nuestras soluciones de automatización."
+  },
+  {
+    "image": "/assets/img/icons/serv_icons/26.png",
+    "title": "CRM",
+    "text": "Organiza, automatiza y mejora la relación con tus clientes, optimizando cada interacción para crecer de manera constante."
+  },
+  {
+    "image": "/assets/img/icons/serv_icons/27.png",
+    "title": "Sistema de Inventarios",
+    "text": "Mantén el control total de tu inventario en tiempo real, optimizando el almacenamiento y evitando pérdidas."
+  },
+  {
+    "image": "/assets/img/icons/serv_icons/28.png",
+    "title": " E-commerce",
+    "text": "Crea tu tienda online y gestiona tus ventas con facilidad. Expande tu negocio a nuevos mercados de manera eficiente."
+  },
+  {
+    "image": "/assets/img/icons/serv_icons/29.png",
+    "title": "Facturación Electrónica",
+    "text": "Genera y gestiona tus facturas de manera fácil y segura, cumpliendo con las normativas vigentes."
+  }
+]

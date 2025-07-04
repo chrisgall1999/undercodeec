@@ -1,0 +1,22 @@
+[
+  {
+    "image": "/assets/img/icons/features/1.png",
+    "title": "Diseño y Desarrollo Web",
+    "descripition": "Creamos sitios web a medida que no solo se ven bien, sino que también funcionan de manera eficiente. Desde tiendas en línea hasta páginas corporativas, cada diseño es adaptado para ofrecer la mejor experiencia al usuario y maximizar tus conversiones."
+  },
+  {
+    "image": "/assets/img/icons/features/2.png",
+    "title": "Undercodeec - Aplicaciones móviles",
+    "descripition": "Desarrollamos Undercodeec - Aplicaciones móviles intuitivas y fáciles de usar que mejoran la interacción con tus clientes. Ya sea iOS o Android, contamos con la experiencia necesaria para crear aplicaciones que estén siempre a la vanguardia."
+  },
+  {
+    "image": "/assets/img/icons/features/3.png",
+    "title": "Marketing Digital para tu Negocio",
+    "descripition": "Lleva tu negocio a más personas. Ofrecemos campañas de marketing digital diseñadas para atraer, convertir y fidelizar clientes. Desde SEO, SEM, redes sociales hasta email marketing, cada estrategia está diseñada específicamente para tu audiencia y objetivos."
+  },
+  {
+    "image": "/assets/img/icons/features/4.png",
+    "title": "Desarrollo de Software a Medida",
+    "descripition": "¿Necesitas una solución única para tu negocio? Creamos software a medida que se adapta a tus necesidades y optimiza tus procesos internos. Automatización, gestión de inventarios, CRM y mucho más, todo personalizado para tu empresa."
+  }
+]

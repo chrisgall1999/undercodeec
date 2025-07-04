@@ -1,0 +1,23 @@
+[
+  {
+    "media": "/assets/img/blog/proteje tus datos.mp4",
+    "type": "Nuevo",
+    "time": "3 Enero 2025",
+    "title": " La Importancia de la Seguridad en el Desarrollo Web",
+    "desc": "Con el aumento de los ciberataques, la seguridad en el desarrollo web nunca ha sido tan crucial. "
+  },
+  {
+    "media": "/assets/img/blog/inteligencia artificial.mp4",
+    "type": "Nuevo",
+    "time": "3 Enero 2025",
+    "title": "Cómo la Inteligencia Artificial Está Revolucionando el Desarrollo de Software",
+    "desc": "La inteligencia artificial (IA) ya no es una moda, sino una herramienta que está transformando la forma en que desarrollamos software. "
+  },
+  {
+    "media": "/assets/img/blog/OK videojuegos.mp4",
+    "type": "News",
+    "time": "3 Days ago",
+    "title": "¡KO Total! La Inteligencia Artificial Anota un Gancho en los Videojuegos",
+    "desc": "​La inteligencia artificial (IA) ha irrumpido en el mundo de los videojuegos, especialmente en el género de boxeo, ofreciendo experiencias más realistas y desafiantes."
+  }
+]

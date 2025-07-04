@@ -1,0 +1,18 @@
+# NODE & BACKEND
+backend/node_modules/
+backend/.env
+*.zip
+
+# FRONTEND (Gatsby / React)
+undercodeec_gatsby/node_modules/
+undercodeec_gatsby/.cache/
+undercodeec_gatsby/public/
+
+# SISTEMA / TEMPORALES
+.DS_Store
+Thumbs.db
+*.log
+
+# IDEs
+.vscode/
+.idea/

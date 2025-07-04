@@ -1,0 +1,37 @@
+[
+  {
+    "image": "/assets/img/icons/appc1.webp",
+    "title": {
+      "text1": "Rendimiento y velocidad"
+    }
+  },
+  {
+    "image": "/assets/img/icons/appc2.webp",
+    "title": {
+      "text1": "Precios módicos",
+      "text2": "para ti"
+    }
+  },
+  {
+    "image": "/assets/img/icons/appc3.webp",
+    "title": {
+      "text1": "Notificaciones push",
+      "text2": "para tu app"
+    },
+    "new": true
+  },
+  {
+    "image": "/assets/img/icons/appc4.webp",
+    "title": {
+      "text1": "Aplicaciones móviles ",
+      "text2": "seguras y de alto rendimiento"
+    }
+  },
+  {
+    "image": "/assets/img/icons/appc5.webp",
+    "title": {
+      "text1": "Encuéntrala en Play Store ",
+      "text2": "y App Store"
+    }
+  }
+]

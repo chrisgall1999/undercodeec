@@ -1,0 +1,24 @@
+[
+  {
+    "value": 5,
+    "title": {
+      "part1": "Años",
+      "part2": "de experiencia"
+    }
+  },
+  {
+    "value": 100,
+    "operator": null,
+    "title": {
+      "part1": "Proyectos",
+      "part2": "Completados"
+    }
+  },
+  {
+    "value": 265,
+    "operator": null,
+    "title": {
+      "part1": "Clientes Satisfechos"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Software Basico",
+    "price": "300.00",
+    "features": [
+      "Gestión básica de facturación",
+      "Control de inventarios básico",
+      "Informes financieros básicos",
+      "Capacitación básica",
+      "Interfaz sencilla y fácil de usar"
+    ]
+  },
+  {
+    "head": "Recomendado ",
+    "title": "Plan Mediano",
+    "price": "500.00",
+    "features": [
+      "Gestión avanzada de inventarios",
+      "Facturación electrónica",
+      "Generación de informes detallados",
+      "Integración con otras herramientas",
+      "Capacitación avanzada"
+    ]
+  },
+  {
+    "title": "Plan Personalizado",
+    "price": "800.00",
+    "features": [
+      "Personalización total del software",
+      "Integración con sistemas internos",
+      "Gestión avanzada para clientes",
+      "Actualizaciones y mantenimiento",
+      "Soporte dedicado"
+    ]
+  }
+]

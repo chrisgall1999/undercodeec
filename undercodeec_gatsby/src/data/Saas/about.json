@@ -1,0 +1,18 @@
+{
+  "lineLinks": [
+    "Cifrado de Datos",
+    "Autenticación Multifactor (MFA)",
+    "Cumplimiento de Normativas",
+    "Actualizaciones de Seguridad"
+  ],
+  "list": [
+    { "icon": "bi bi-check2", "title": "Seguridad para tu aplicación" },
+    { "icon": "bi bi-check2", "title": "Fáciles de usar" },
+    { "icon": "bi bi-check2", "title": "Precios módicos" }
+  ],
+  "texts": {
+    "text1": "Haz que tu página web refleje completamente la identidad de tu negocio. Con nuestras herramientas de personalización intuitivas, puedes adaptar cada elemento de tu sitio para que se ajuste a tus necesidades.",
+    "text2": "Desde el diseño hasta las funciones específicas, ofrecemos un control total sobre los permisos y las actividades de los proveedores. ¡No importa el tipo de negocio, personaliza cada rincón de tu sitio web y ofrece una experiencia única a tus clientes!"
+  },
+  "number": "42,500+"
+}

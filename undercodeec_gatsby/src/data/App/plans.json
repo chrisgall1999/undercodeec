@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Plan Mensual",
+    "price": "$150",
+    "image": "/assets/img/icons/price_s4_1.png",
+    "description": "Acceso continuo a todas las funcionalidades premium",
+    "features": [
+      {
+        "icon": "far fa-sticky-note",
+        "title": "Actualizaciones constantes y nuevas funcionalidades",
+        "active": true
+      },
+      {
+        "icon": "fas fa-paperclip",
+        "title": "Obtén asistencia técnica más rápida y eficiente.",
+        "active": true
+      },
+      {
+        "icon": "fas fa-lock",
+        "title": "Acceso completo",
+        "active": false
+      },
+      {
+        "icon": "fas fa-undo",
+        "title": "Ideal para usuarios que desean mantener el acceso a nuevas versiones y funcionalidades de la app sin preocuparse por pagos iniciales grandes.",
+        "active": false
+      },
+      {
+        "icon": "fas fa-download",
+        "title": "Comienza hoy y disfruta de todas las ventajas premium de nuestra aplicación móvil.",
+        "active": false
+      }
+    ]
+  },
+  {
+    "title": "Premium Plan",
+    "price": "$1200",
+    "image": "/assets/img/icons/price_s4_2.png",
+    "description": "Compra única, acceso para siempre",
+    "off": "20%",
+    "features": [
+      {
+        "icon": "far fa-sticky-note",
+        "title": "Paga una vez y disfruta para siempre",
+        "active": true
+      },
+      {
+        "icon": "fas fa-paperclip",
+        "title": "Sin compromisos recurrentes",
+        "active": true
+      },
+      {
+        "icon": "fas fa-lock",
+        "title": "Acceso a todas las herramientas",
+        "active": true
+      },
+      {
+        "icon": "fas fa-undo",
+        "title": "Ideal para quienes buscan una solución económica y sin renovaciones constantes.",
+        "active": true
+      },
+      {
+        "icon": "fas fa-download",
+        "title": "Haz tu compra única y accede para siempre a las mejores funciones.",
+        "active": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "/assets/img/icons/serv_icons/iconweb.webp",
+    "info": "Diseño Web",
+    "details": "Desarrollo de sitios web modernos, responsivos y personalizados."
+  },
+  {
+    "icon": "/assets/img/icons/serv_icons/iconapp.webp",
+    "info": "Aplicaciones móviles",
+    "details": "Diseño y desarrollo de aplicaciones para iOS y Android."
+  },
+  {
+    "icon": "/assets/img/icons/serv_icons/iconwoo.webp",
+    "info": "E-commerce",
+    "details": "Soluciones de comercio electrónico adaptadas a tus necesidades."
+  },
+  {
+    "icon": "/assets/img/icons/serv_icons/iconsoftw.webp",
+    "info": "Software",
+    "details": "Soluciones de software a medida para tu negocio."
+  }
+]

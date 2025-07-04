@@ -1,0 +1,55 @@
+{
+  "numCards": [
+    {
+      "image": "/assets/img/icons/opinionapp.webp",
+      "value": "Tu opinión importa",
+      "type": {
+        "text1": "",
+        "text2": ""
+      }
+    },
+    {
+      "image": "/assets/img/icons/testi_s4_ic2.png",
+      "value": "4.8/5",
+      "stars": 5,
+      "type": ""
+    }
+  ],
+  "testiCards": [
+    {
+      "userImg": "/assets/img/testimonioapp1.webp",
+      "stars": 5,
+      "title": {
+        "text1": "“La aplicación móvil que desarrollaron para nuestra empresa superó nuestras expectativas. Ahora podemos generar reportes de manera automática en PDF, lo que antes nos tomaba horas hacer manualmente. ",
+        "text2": " El equipo entendió perfectamente nuestras necesidades y nos entregó una solución eficiente, rápida y muy fácil de usar.”"
+      },
+      "author": {
+        "name": "Eduardo Reinoso",
+        "position": "Jefe de Área",
+        "company": "Techni-Help"
+      }
+    },
+    {
+      "userImg": "/assets/img/testimoniosapp2.webp",
+      "stars": 5,
+      "title": "“Antes tenía que anotar todo en papel o en el celular de forma desordenada. Con la app de Techni-Help, ahora puedo generar reportes detallados en minutos, con toda la información organizada. Me ahorra muchísimo tiempo en cada visita técnica y el cliente también recibe el informe al instante.”",
+      "author": {
+        "name": "Técnico de mantenimiento",
+        "position": "",
+        "company": "Techni-Help"
+      }
+    },
+    {
+      "userImg": "/assets/img/testimoniosapp3.webp",
+      "stars": 5,
+      "title": {
+        "text1": "”La aplicación nos ayudó a organizarnos mejor. Ahora recibimos pedidos directamente, con menos errores y en menos tiempo. ¡Fue un cambio total para el negocio! "
+      },
+      "author": {
+        "name": "Técnico de mantenimiento",
+        "position": "",
+        "company": "Techni-Help"
+      }
+    }
+  ]
+}

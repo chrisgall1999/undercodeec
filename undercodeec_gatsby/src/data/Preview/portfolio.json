@@ -1,0 +1,20 @@
+{
+  "st1": [
+    "/landing-preview/img/header/1.webp",
+    "/landing-preview/img/header/2.webp",
+    "/landing-preview/img/header/3.webp",
+    "/landing-preview/img/header/4.webp",
+    "/landing-preview/img/header/5.webp",
+    "/landing-preview/img/header/6.webp",
+    "/landing-preview/img/header/7.webp"
+  ],
+  "st2": [
+    "/landing-preview/img/header/8.webp",
+    "/landing-preview/img/header/9.webp",
+    "/landing-preview/img/header/11.webp",
+    "/landing-preview/img/header/13.webp",
+    "/landing-preview/img/header/12.webp",
+    "/landing-preview/img/header/10.webp",
+    "/landing-preview/img/header/14.webp"
+  ]
+}

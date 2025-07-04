@@ -1,0 +1,30 @@
+[
+  {
+    "stars": 5,
+    "comment": "¡Totalmente recomendado! <br> Undercodeec transformó mi idea en una página web profesional y funcional. Ahora mi negocio tiene presencia online y ha crecido increíblemente.",
+    "author": "Marily Tintuaña",
+    "reason": "Lic. comunicación",
+    "image": "/landing-preview/img/marily.webp"
+  },
+  {
+    "stars": 5,
+    "comment": "¡Gran servicio!<br> Gracias a Undercodeec, mi tienda en línea es rápida, atractiva y fácil de navegar. Su equipo entendió exactamente lo que necesitaba.",
+    "author": "Belén Llumiquinga",
+    "reason": "Ing. ambiental con diplomado en finanzas",
+    "image": "/landing-preview/img/belen.webp"
+  },
+  {
+    "stars": 5,
+    "comment": "Profesionales y eficientes. <br> El equipo de Undercodeec no solo diseñó una web increíble, sino que también nos ayudó a optimizar la experiencia de usuario",
+    "author": "Xavier Oviedo",
+    "reason": "Lic.comunicación",
+    "image": "/landing-preview/img/xavier.webp"
+  },
+  {
+    "stars": 5,
+    "comment": "Undercodeec es un equipo que ofrece soluciones de manera agil y responsable, ofrece un servicio profesional enfocado en las necesidades de la empresa y en la experiencia del usuario",
+    "author": "Sebastian Narvaez",
+    "reason": "Empresario",
+    "image": "/landing-preview/img/sebastian.webp"
+  }
+]

@@ -1,0 +1,96 @@
+[
+    {
+      "id": 1,
+      "question": "¿Cuánto cuesta crear un sitio web?",
+      "answer": {
+        "part1": "Cada sitio web es único y requiere componentes diferentes; es un proceso complejo, pero eso no significa que nuestros precios deban serlo. Ofrecemos un precio para sitios de 1 a 10 páginas. "    }
+    },
+    {
+      "id": 2,
+      "question": "¿Cuánto tiempo tomará completar mi sitio web?",
+      "answer": {
+        "part1": "Nuestro plazo estándar para completar un sitio web es de 1 a 2 semanas, aunque esto puede variar según el proyecto. El tamaño y el ritmo lo establece cada cliente. La cantidad de información que nos proporcione en las etapas iniciales, sus comentarios y la rapidez con la que entregue el contenido influirán directamente en el tiempo de entrega. También se deben considerar la funcionalidad requerida y las revisiones necesarias."
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Tengo que estar presente para trabajar con ustedes?",
+      "answer": {
+        "part1": "¡No! Trabajamos con clientes de todo el mundo y nos comunicamos a través de correo electrónico, llamadas programadas y reuniones por Zoom o Google Meet."
+      }
+    },
+    {
+      "id": 4,
+      "question": "¿Podré actualizar el sitio yo mismo cuando esté terminado?",
+      "answer": {
+        "part1": "Sí, definitivamente tienes la opción. Te daremos acceso como administrador para que puedas hacer actualizaciones por tu cuenta. Si decides alojar tu sitio web con nosotros, algunas actualizaciones están incluidas y son gratuitas según tu plan de hosting. Si en el futuro necesitas ayuda con cambios específicos y no estás en un plan con soporte incluido, también podemos asistirte por un costo adicional."
+        
+      }
+    },
+    
+    {
+      "id": 5,
+      "question": " ¿Qué pasa si no me gusta el diseño?",
+      "answer": {
+        "part1": "¡No te preocupes! Nuestro objetivo es que quedes completamente satisfecho con tu sitio web. Realizaremos los ajustes necesarios hasta lograr un diseño que se alinee con lo que necesitas. La cantidad de revisiones dependerá del plan que hayas contratado y del nivel de cambio solicitado. Si los cambios no son muy significativos, suelen estar incluidos sin costo adicional."
+      }
+    },
+    {
+      "id": 6,
+      "question": "¿Ofrecen alojamiento web y dominio?",
+      "answer": {
+        "part1": "Sí, ofrecemos servicios de alojamiento web y registro de dominio a precios muy competitivos. Al contratar tu sitio con nosotros, puedes centralizar todo en un solo lugar: diseño, dominio y hosting. Además, nuestros planes de alojamiento incluyen soporte técnico, actualizaciones básicas y excelente rendimiento, para que no tengas que preocuparte por la parte técnica."
+        
+      }
+    },
+    {
+      "id": 7,
+      "question": "¿Mi sitio web será compatible con dispositivos móviles?",
+      "answer": {
+        "part1": "¡Por supuesto! Hoy en día, la mayoría de las visitas provienen de teléfonos y tabletas, por lo que es fundamental que tu sitio funcione perfectamente en cualquier dispositivo. Diseñamos sitios web completamente responsivos, lo que significa que se adaptan automáticamente a diferentes tamaños de pantalla y se ven bien en todos los navegadores modernos."
+        
+      }
+    },
+    {
+      "id": 8,
+      "question": "¿Sólo creas sitios web en WordPress?",
+      "answer": {
+        "part1": "No, nos especializamos en desarrollo web en WordPress y codigo nativo eso quiere decir que se podra ajustar a las necesidades del cliente segun lo requiera."
+        
+      }
+    },
+    {
+      "id": 9,
+      "question": "¿Qué pasa si necesito ayuda con mi sitio en el futuro?",
+      "answer": {
+        "part1": "¡Estamos a solo un correo de distancia! Seguimos disponibles incluso después del lanzamiento de tu sitio web, para ayudarte con lo que necesites. Una vez finalizado el proyecto, te entregaremos todos los accesos como administrador, lo que te permitirá realizar cambios o actualizaciones por tu cuenta o con el desarrollador que prefieras. Esto forma parte de nuestro compromiso con la transparencia y la fidelización de nuestros clientes. Estaremos por aquí por mucho tiempo, así que no dudes en contactarnos cuando lo necesites. Puedes escribirnos a <a href=\"mailto:undercod@undercodeec.com\" class=\"email-link\">undercod@undercodeec.com</a> y solicitar un ticket de soporte para comenzar."
+        
+      }
+    },
+    {
+        "id": 10,
+        "question": "¿Trabajan con empresas nuevas y pequeñas?",
+        "answer": {
+          "part1": "¡Sí! Trabajamos con todo tipo de empresas: desde nuevas hasta pequeñas y grandes corporaciones. Nos entusiasma trabajar y guiar a nuevas empresas apasionadas por dar sus primeros pasos en una presencia online y hacer realidad su visión."
+          
+        }
+      },
+
+      {
+        "id": 11,
+        "question": "¿Qué formas de pago aceptan?",
+        "answer": {
+          "part1": "Aceptamos tarjetas de débito, Visa, MasterCard, efectivo y trasferencias. Desplácese hacia arriba y haga clic en el botón 'Empezar' para obtener más información sobre el pago."
+          
+        }
+      },
+
+      {
+        "id": 12,
+        "question": "¿Cómo empezamos?",
+        "answer": {
+          "part1": "Una vez que elija y pague un paquete, recibirá un correo electrónico nuestro con una lista de preguntas e instrucciones sobre el primer paso. 🙂 Además, nos pondremos en contacto contigo por teléfono para asegurarnos de que todo esté claro y para responder cualquier pregunta que puedas tener."
+          
+        }
+      }
+  ]

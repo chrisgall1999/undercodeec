@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Básico Operativo",
+    "price": {
+      "monthly": "$150",
+      "yearly": "$150"
+    },
+    "short_description": "",
+    "description": "",
+    "features": [
+      {
+        "title": "👤 Usuarios",
+        "content": "1"
+      },
+      {
+        "title": "📦 Gestión de inventario",
+        "content": "básica"
+      },
+      {
+        "title": "🧾 Facturación",
+        "content":"manual"
+      },
+      {
+        "title": "🏋️ Gestión de membresías",
+        "content": "NO"
+      },
+      {
+        "title": "📱 Acceso desde móvil",
+        "content":"NO"
+      },
+      {
+        "title": "🔐 Accesos y roles",
+        "content": "NO"
+      },
+      {
+        "title": "📊 Reportes",
+        "content":"Limitados"
+      }
+     
+    ]
+  },
+  {
+    "title": "Negocio Establecido",
+    "price": {
+      "monthly": "$250",
+      "yearly": "$250"
+    },
+    "bestChoice": true,
+    "features": [
+      {
+        "title": "👤 Usuarios",
+        "content": "Hasta 5 usuarios"
+      },
+      {
+        "title": "📦 Gestión de inventario",
+        "content": "Avanzada (alertas, reportes)"
+      },
+      {
+        "title": "🧾 Facturación",
+        "content":"Electrónica integrada"
+      },
+      {
+        "title": "🏋️ Gestión de membresías",
+        "content": "Incluida"
+      },
+      {
+        "title": "📱 Acceso desde móvil",
+        "content":"Sí (web responsive)"
+      },
+      {
+        "title": "🔐 Accesos y roles",
+        "content": "Básico"
+      },
+      {
+        "title": "📊 Reportes",
+        "content":"Avanzados"
+      }
+     
+      
+    ]
+  },
+  {
+    "title": "ultimate",
+    "price": {
+      "monthly": "$400",
+      "yearly": "$400"
+    },
+    "short_description": "",
+    "description": "",
+    "features": [
+      {
+        "title": "👤 Usuarios",
+        "content": "Ilimitados"
+      },
+      {
+        "title": "📦 Gestión de inventario",
+        "content": "Avanzada + sucursales"
+      },
+      {
+        "title": "🧾 Facturación",
+        "content":"Facturación automática + reportes"
+      },
+      {
+        "title": "🏋️ Gestión de membresías",
+        "content": "Incluida + notificaciones automáticas"
+      },
+      {
+        "title": "📱 Acceso desde móvil",
+        "content":"App dedicada (opcional*)"
+      },
+      {
+        "title": "🔐 Accesos y roles",
+        "content": "Personalizado"
+      },
+      {
+        "title": "📊 Reportes",
+        "content":"Personalizados + exportables"
+      }
+     
+    ]
+  }
+]
