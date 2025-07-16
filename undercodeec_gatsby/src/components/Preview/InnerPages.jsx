@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'; // agregar useRef
-import { FaTag } from 'react-icons/fa';
-import ReactGA from 'react-ga4';
+import { FaTag, FaCreditCard, FaExchangeAlt } from 'react-icons/fa'; import ReactGA from 'react-ga4';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 
 const AffiliationSection = () => {
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
+  const [showBankDetails, setShowBankDetails] = useState(false);
 
   const [selectedPlan, setSelectedPlan] = useState('Landing Page');
   const [loading, setLoading] = useState(false);
@@ -18,10 +18,13 @@ const AffiliationSection = () => {
   const [showError, setShowError] = useState(false);
 
 
+  const [selectedSubPlan, setSelectedSubPlan] = useState('Web estándar');
 
   const handlePlanChange = (plan) => {
     setSelectedPlan(plan);
+    setSelectedSubPlan('Web estándar'); // ← Selecciona siempre este subplan por defecto
   };
+
 
   const handleFormToggle = (e) => {
     e.preventDefault();
@@ -112,72 +115,167 @@ const AffiliationSection = () => {
 
   const planDetails = {
     'Landing Page': {
-      price: '$80',
-      features1: [
-        'Tu dominio.com',
-        'Hosting incluido',
-        'Diseño personalizado',
-        'Página autoadministrable',
-      ],
-      features2: [
-        'Formularios de contacto',
-        'Botones de WhatsApp',
-        'Correos corporativos',
-        'Una sola pestaña interna',
-      ],
+      subPlans: {
+        'Web estándar': {
+          price: '$40',
+          features1: [
+            'Tu dominio.com & hosting por un año',
+            'Diseño estandar',
+            'Página autoadministrable',
+            'SEO basico (busquedas en Google palabra unica)',
+          ],
+          features2: [
+            'Formularios de contacto',
+            'Botones de WhatsApp',
+            'Correos corporativos',
+            'Una sola pestaña interna',
+          ],
+        },
+        'Web completa': {
+          price: '$80',
+          features1: [
+            'Tu dominio.com & hosting por un año',
+            'Google Analytics integrado & Pixel Meta',
+            'Página autoadministrable',
+            'SEO con Google Ads (publicidad)',
+            'Integraciones personalizadas',
+          ],
+          features2: [
+            'Creacion de resdes sociales',
+            'Diseño personalizado',
+            'Botones de WhatsApp',
+            'Seguridad integrada (firewall)',
+            'copias de seguridad automaticas',
+          ],
+        }
+      }
     },
     'Página Informativa': {
-      price: '$160',
-      features1: [
-        'Tu dominio.com',
-        'Hosting incluido',
-        'Inicio, tienda , nosotros, contacto',
-        'Hasta 4 pestañas internas adicionales',
-      ],
-      features2: [
-        'Página autoadministrable',
-        'Formulario de contacto',
-        'Botones de WhatsApp',
-        'Correos corporativos',
-      ],
+      subPlans: {
+        'Web estándar': {
+          price: '$60',
+          features1: [
+            'Tu dominio.com & hosting por un año',
+            'Inicio, servicios, nosotros, contacto',
+            'SEO basico (busquedas en Google palabra unica)',
+            'Diseño estandar',
+            'SEO basico (busquedas en Google palabra unica)',
+
+          ],
+          features2: [
+            'Google Analytics integrado',
+            'Formulario de contacto',
+            'Botones de whatsApp',
+            'Correos corporativos',
+          ],
+        },
+        'Web completa': {
+          price: '$160',
+          features1: [
+            'Tu dominio.com por un año',
+            'Creacion de resdes sociales',
+            'Inicio, tienda , nosotros, contacto',
+            'Hasta 4 pestañas internas adicionales',
+            'SEO con Google Ads (publicidad)',
+          ],
+          features2: [
+            'Página autoadministrable',
+            'Formulario de contacto',
+            'Botones de WhatsApp',
+            'Correos corporativos',
+            'Copias de seguridad automaticas',
+            'Seguridad integrada (firewall)',
+          ],
+        }
+      }
     },
     'Tienda Online': {
-      price: '$290',
-      features1: [
-        'Tu dominio.com',
-        'Hosting incluido',
-        'Catálogo de tus productos',
-        'Pasarela de pago con tarjetas',
-      ],
-      features2: [
-        'Inicio, tienda , nosotros, contacto',
-        'Sube tus productos de forma ilimitada',
-        'Carrito de compra',
-        'Confirmación de pago al correo electrónico',
-      ],
+      subPlans: {
+        'Tienda Online estándar': {
+          price: '$125',
+          features1: [
+            'Tu dominio.com & hosting por un año',
+            'Catálogo de tus productos',
+            'Pasarela de pago con tarjetas debito/credito',
+            'Google Analytics integrado',
+            'SEO basico (busquedas en Google palabra unica)',
+          ],
+          features2: [
+            'Formulario de contacto',
+            'Botones de whatsApp para comprar',
+            'Correos corporativos',
+            'Confirmación de pago al correo electrónico',
+          ],
+        },
+        'Tienda Online completa': {
+          price: '$290',
+          features1: [
+            'Tu dominio.com & hosting por un año',
+            'Sube tus productos de forma ilimitada',
+            'Pasarela de pago con tarjetas debito/credito',
+            'Copias de seguridad automaticas',
+            'SEO con Google Ads (publicidad)',
+            'Creacion de resdes sociales',
+            'Correos corporativos',
+          ],
+          features2: [
+            'Inicio, tienda , nosotros, contacto (varias paginas integradas)',
+            'Carrito de compra',
+            'Confirmación de pago al correo electrónico',
+            'Videos tutoriales integrados a WordPress',
+            'Seguridad integrada (firewall)',
+            'Botones de whatsApp para comprar',
+          ],
+        }
+      }
     },
     'Plataforma de cursos': {
-      price: '$250',
-      features1: [
-        'Tu dominio.com',
-        'Hosting incluido',
-        'Tu propia plataforma de cursos tipo Crehana, Domestika, Netflix',
-        'Portal completo para estudiantes y profesores',
-      ],
-      features2: [
-        'Certificados automáticos',
-        'Vende tus cursos en línea',
-        'Sube cursos de forma ilimitada',
-        'Correos corporativos',
-      ],
+      subPlans: {
+        'Plataforma estandar': {
+          price: '$250',
+          features1: [
+            'Tu dominio.com & hosting por un año',
+            'Tu propia plataforma de cursos tipo Crehana, Domestika, Netflix',
+            'Portal completo para estudiantes y profesores',
+            'SEO basico (busquedas en Google palabra unica)',
+          ],
+          features2: [
+            'Certificados automáticos',
+            'Vende tus cursos en línea',
+            'Sube cursos de forma ilimitada',
+            'Correos corporativos',
+            'SEO con Google Ads (publicidad)',
+            'Seguridad integrada (firewall)',
+          ],
+        },
+        'Plataforma completa': {
+          price: '$350',
+          features1: [
+            'Tu dominio.com & hosting por un año',
+            'Tu propia plataforma de cursos tipo Crehana, Domestika, Netflix',
+            'Portal completo para estudiantes y profesores',
+            'Videos tutoriales integrados',
+            'Creacion de resdes sociales',
+          ],
+          features2: [
+            'Certificados automáticos',
+            'Vende tus cursos en línea',
+            'Sube cursos de forma ilimitada',
+            'Correos corporativos',
+            'SEO con Google Ads (publicidad)',
+            'Seguridad integrada (firewall)',
+          ],
+        }
+      }
     },
   };
   const handlePayment = async (isFormSubmitted = formSubmitted) => {
     console.log('Iniciando handlePayment - formSubmitted:', isFormSubmitted);
 
-    if (!isFormSubmitted) {  // Cambia formSubmitted por isFormSubmitted
+    if (!isFormSubmitted) {
       console.warn('Payment bloqueado: formulario no enviado');
       setShowForm(true);
+      setShowBankDetails(false); // Asegura que los datos bancarios estén ocultos
       setShowError(true);
       return;
     }
@@ -294,6 +392,10 @@ const AffiliationSection = () => {
                       });
 
                       handlePlanChange(plan);
+                      const firstSubPlan = planDetails[plan]?.subPlans
+                        ? Object.keys(planDetails[plan].subPlans)[0]
+                        : null;
+                      setSelectedSubPlan(firstSubPlan);
                     }}
 
                   >
@@ -301,29 +403,52 @@ const AffiliationSection = () => {
                   </button>
                 ))}
               </div>
-              <p>Dos pagos de</p>
+
+              {planDetails[selectedPlan]?.subPlans && (
+                <div className="subplan-toggle d-flex justify-content-center gap-2 mb-3">
+                  {Object.keys(planDetails[selectedPlan].subPlans).map((subPlan) => (
+                    <button
+                      key={subPlan}
+                      className={`btn ${selectedSubPlan === subPlan ? 'btn-active' : 'btn-inactive'}`}
+                      onClick={() => setSelectedSubPlan(subPlan)}
+                    >
+                      {subPlan}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              <p>Dos pagos mensuales de</p>
               <div className="pricing d-flex align-items-center gap-2 mb-2">
                 <FaTag size={28} style={{ color: '#fdb800' }} />
-                <h4 className="mb-0">{planDetails[selectedPlan].price}</h4>
+                <h4 className="mb-0">
+                  {planDetails[selectedPlan].subPlans
+                    ? planDetails[selectedPlan].subPlans[selectedSubPlan].price
+                    : planDetails[selectedPlan].price}
+                </h4>
               </div>
 
 
-              <div className="row">
-                <div className="col-md-6">
-                  <ul className="features-list">
-                    {planDetails[selectedPlan].features1.map((feature, index) => (
-                      <li key={`col1-${index}`}>{feature}</li>
-                    ))}
-                  </ul>
+              {planDetails[selectedPlan]?.subPlans && planDetails[selectedPlan].subPlans[selectedSubPlan] && (
+                <div className="row">
+                  <div className="col-md-6">
+                    <ul className="features-list">
+                      {planDetails[selectedPlan].subPlans[selectedSubPlan].features1.map((feature, index) => (
+                        <li key={`col1-${index}`}>{feature}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="col-md-6">
+                    <ul className="features-list">
+                      {planDetails[selectedPlan].subPlans[selectedSubPlan].features2.map((feature, index) => (
+                        <li key={`col2-${index}`}>{feature}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div className="col-md-6">
-                  <ul className="features-list">
-                    {planDetails[selectedPlan].features2.map((feature, index) => (
-                      <li key={`col2-${index}`}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              )}
+
+
               {showSuccessAlert && (
                 <div className="alert alert-success mb-3" role="alert">
                   ¡Información enviada con éxito! Estamos generando tu link de pago...
@@ -353,106 +478,130 @@ const AffiliationSection = () => {
                       action: 'click_empezar',
                       label: 'Botón Empezar',
                     });
-
-                    // Meta Pixel
                     window.fbq('trackCustom', 'ClickEmpezarPago', {
                       plan: selectedPlan,
                     });
-
+                    setShowBankDetails(false); // Oculta datos bancarios
                     handlePayment();
                   }}
-
                   disabled={loading}
                 >
-                  {loading ? 'Procesando...' : 'Empezar'}
+                  <FaCreditCard className="icon-card-pulse" /> {/* ¡Clase actualizada aquí! */}
+                  {loading ? 'Procesando...' : 'PAGAR CON TARJETA'}
                 </button>
 
                 <a
                   href="#reserva"
-                  className={`btn-link ${showError ? 'text-danger' : ''}`}
-                  onClick={handleFormToggle}
+                  className={`btn-link ${showError ? 'text-danger' : ''} d-flex align-items-center gap-2`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowBankDetails(!showBankDetails);
+                    setShowForm(false); // Asegura que el formulario esté oculto
+                  }}
+                  style={{ cursor: 'pointer' }}
                 >
-                  Click aquí para llenar datos de facturación ↓
+                  <FaExchangeAlt />
+                  {showBankDetails ? 'Ocultar datos de transferencia ↑' : 'PAGAR CON TRANSFERENCIA ↓'}
                 </a>
 
               </div>
-
               {showForm && (
-                <form className="mt-3" onSubmit={handleSubmit} style={{ maxWidth: '500px' }}>
-                  <div className="mb-2">
-                    <input
-                      type="text"
-                      name="nombre"
-                      placeholder="Tu nombre"
-                      value={formData.nombre}
-                      onChange={handleInputChange}
-                      className="form-control"
-                      required
+                <>
+                  <form className="mt-3" onSubmit={handleSubmit} style={{ maxWidth: '500px' }}>
+                    <div className="mb-2">
+                      <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Tu nombre"
+                        value={formData.nombre}
+                        onChange={handleInputChange}
+                        className="form-control"
+                        required
+                      />
+                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Tu correo"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        className="form-control"
+                        required
+                      />
+                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="tel"
+                        name="telefono"
+                        placeholder="Tu número de teléfono"
+                        value={formData.telefono}
+                        onChange={handleInputChange}
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="mb-2">
+                      <textarea
+                        name="mensaje"
+                        placeholder="Mensaje opcional"
+                        value={formData.mensaje}
+                        onChange={handleInputChange}
+                        className="form-control"
+                        rows="3"
+                      ></textarea>
+                    </div>
+
+                    <ReCAPTCHA
+                      sitekey="6Lf_OSsrAAAAAORgEcrisGsaYvGk1CtX2sPD24Fr"
+                      onChange={(token) => setRecaptchaToken(token)}
+                      theme="light"
+                      ref={recaptchaRef}
                     />
-                  </div>
-                  <div className="mb-2">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Tu correo"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="form-control"
-                      required
-                    />
-                  </div>
-                  <div className="mb-2">
-                    <input
-                      type="tel"
-                      name="telefono"
-                      placeholder="Tu número de teléfono"
-                      value={formData.telefono}
-                      onChange={handleInputChange}
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="mb-2">
-                    <textarea
-                      name="mensaje"
-                      placeholder="Mensaje opcional"
-                      value={formData.mensaje}
-                      onChange={handleInputChange}
-                      className="form-control"
-                      rows="3"
-                    ></textarea>
-                  </div>
 
-                  <ReCAPTCHA
-                    sitekey="6Lf_OSsrAAAAAORgEcrisGsaYvGk1CtX2sPD24Fr"
-                    onChange={(token) => setRecaptchaToken(token)}
-                    theme="light"
-                    ref={recaptchaRef}
-                  />
+                    <button
+                      type="submit"
+                      className="btn btn-success"
+                      onClick={() => {
+                        ReactGA.event({
+                          category: 'Interacción',
+                          action: 'click_enviar',
+                          label: 'Botón Enviar Formulario',
+                        });
+
+                        // Meta Pixel
+                        window.fbq('trackCustom', 'EnviarFormulario', {
+                          nombre: formData.nombre,
+                          email: formData.email,
+                        });
+                      }}
+                    >
+                      Enviar
+                    </button>
+                  </form>
 
 
-                  <button
-                    type="submit"
-                    className="btn btn-success"
-                    onClick={() => {
-                      ReactGA.event({
-                        category: 'Interacción',
-                        action: 'click_enviar',
-                        label: 'Botón Enviar Formulario',
-                      });
-
-                      // Meta Pixel
-                      window.fbq('trackCustom', 'EnviarFormulario', {
-                        nombre: formData.nombre,
-                        email: formData.email,
-                      });
-                    }}
-
-                  >
-                    Enviar
-                  </button>
-
-                </form>
+                </>
               )}
+              {/* Datos bancarios - ahora independiente del formulario */}
+              {showBankDetails && (
+                <div className="mt-4 p-3 border rounded bg-light">
+                  <p className="fw-bold mb-2">
+                    Si lo prefieres, puedes realizar el pago por transferencia bancaria a la siguiente cuenta:
+                  </p>
+                  <ul className="list-unstyled mb-0">
+                    <li><strong>Banco:</strong> Pichincha</li>
+                    <li><strong>Nombres:</strong> Christopher Alexander Gallardo Campos</li>
+                    <li><strong>Cédula:</strong> 1727155671</li>
+                    <li><strong>N° de cuenta:</strong> 2212385867</li>
+                    <li><strong>Tipo de cuenta:</strong> Ahorros</li>
+                    <li><strong>Celular:</strong> 0979046329</li>
+                  </ul>
+                  <p className="fw-bold mb-2 mt-2">
+                    Por favor enviar el comprobante al WhatsApp: 0979046329
+                  </p>
+                </div>
+              )}
+
 
             </div>
           </div>

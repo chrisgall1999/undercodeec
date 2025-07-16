@@ -89,6 +89,21 @@ h6 {
   box-shadow: 0 0 20px #0001;
 }
 
+/* Animación personalizada para el icono de tarjeta */
+@keyframes iconPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); } /* Más pronunciado que el ejemplo anterior */
+  100% { transform: scale(1); }
+}
+
+.icon-card-pulse {
+  font-size: 1.8rem;
+  color: #fff;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  animation: iconPulse 1.5s infinite ease-in-out; /* Más rápido (1.5s) */
+  margin-right: 10px; /* Espaciado adicional */
+}
+
 .nav-preview .dropDown .dropDownMenu::before {
   position: absolute;
   content: "";
@@ -1412,8 +1427,6 @@ header #js-scene2 {
 .plan-toggle {
   display: flex;
   flex-wrap: wrap;
-  /* Permite que se acomoden bien en pantallas pequeñas */
-  gap: 0 !important;
   margin-top: 20px;
 }
 
@@ -1472,6 +1485,35 @@ header #js-scene2 {
 
 
 
+.subplan-toggle {
+  margin-top: 1rem;
+}
+
+.subplan-toggle .btn {
+  min-width: 150px;
+  font-weight: 600;
+  border: 2px solid #fdb800;
+  background-color: white;
+  color: #333;
+}
+
+.subplan-toggle .btn-active {
+  background-color: #fdb800;
+  color: white;
+}
+.subplan-toggle .btn {
+  outline: none;
+  box-shadow: none;
+}
+
+.subplan-toggle .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.subplan-toggle .btn:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
 
 
 /* Estilo para la columna derecha */
@@ -1564,7 +1606,7 @@ header #js-scene2 {
 
 /* Columna derecha más ancha */
 .custom-right-column {
-  width: 58%;
+  width: 60%;
 }
 
 /*--------------------------- Iconos precios---------------------------*/
@@ -1773,4 +1815,6 @@ header #js-scene2 {
     margin-left: 46px;
     margin-right: 45px;
   }
+
+ 
 }

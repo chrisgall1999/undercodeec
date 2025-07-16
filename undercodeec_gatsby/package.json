@@ -20,7 +20,7 @@
     "gatsby-plugin-purgecss": "^6.2.1",
     "gatsby-plugin-react-helmet": "^5.13.0",
     "gatsby-plugin-resolve-src": "^2.1.0",
-    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-plugin-sitemap": "^5.25.0",
     "lightgallery": "^2.5.0",
     "rc-slider": "^10.0.1",
@@ -36,8 +36,11 @@
     "swiper": "^8.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
     "depcheck": "^1.4.7",
-    "eslint": "^7.32.0",
+    "eslint": "^8.57.1",
     "eslint-webpack-plugin": "^3.2.0",
     "gatsby-plugin-eslint": "^4.0.2"
   }
